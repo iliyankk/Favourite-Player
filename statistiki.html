@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Моят любим футболист</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-div">
+            <nav class="nav-header">
+                <div class="nav-header-h1">
+                    <h1><a class="a-h1 cp" href="index.html">HRISTO</a></h1>
+                    <a href="index.html"><img class="logo cp" src="images/logo.png" alt="logo"></a>
+                    <h1><a class="a-h1 cp" href="index.html">STOICHKOV</a></h1>
+                </div>
+                <div class="header-btns">
+                    <button id="btn-open" class="hamburger-menu" onclick="menu()">
+                        <span class="material-symbols-outlined cp">menu</span>
+                    </button>
+                    <button id="btn-close" class="hamburger-menu" onclick="menu()">
+                        <span class="material-symbols-outlined cp">close</span>
+                    </button>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+    <div id="menu" class="hidden">
+        <nav id="nav-menu">
+            <ul class="nav-ul">
+                <li><a href="kariera.html" title="Състезателната кариера на Христо Стоичков">Състезателна кариера</a></li>
+                <li><a href="treniorstco.html" title="Стоичков като треньор">Треньорска кариера</a></li>
+                <li><a href="postijeniq.html" title="Христо Стоичков">Постижения</a></li>
+                <li><a href="statistiki.html" style="text-decoration: underline !important; color: white;" title="Голове и мачове на Христо Стоичков">Статистики</a></li>
+                <li><a href="contact.html" title="Контакт">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <h2 class="h1-postij">Клубни</h2>
+    <div class="line"></div>
+
+    <table>
+        <tr>
+            <th rowspan="2">Клуб</th>
+            <th rowspan="2">Сезон</th>
+            <th colspan="3">Първенство</th>
+            <th colspan="2">Национална купа</th>
+            <th colspan="2">Купа на лигата</th>
+            <th colspan="2">Международни</th>
+            <th colspan="2">Общо</th>
+        </tr>
+        <tr>
+            <th>Дивизия</th>
+            <th>Мачове</th>
+            <th>Голове</th>
+            <th>Мачове</th>
+            <th>Голове</th>
+            <th>Мачове</th>
+            <th>Голове</th>
+            <th>Мачове</th>
+            <th>Голове</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td rowspan="3">ФК Хеброс</td>
+            <td>1982-83</td>
+            <td rowspan="2">В група</td>
+            <td>11</td>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>11</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1983-84</td>
+            <td>21</td>
+            <td>10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>21</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <th colspan="2">Общо</th>
+            <th>32</th>
+            <th>14</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>32</th>
+            <th>14</th>
+        </tr>
+        <tr>
+        <td rowspan="7">ЦСКА</td>
+        <td>1984–85</td>
+        <td rowspan="6">А група</td>
+        <td>11</td>
+        <td>0</td>
+        <td>3</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>14</td>
+        <td>0</td>
+        </tr>
+        <tr>
+        <td>1985–86</td>
+        <td>0</td>
+        <td>0</td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        </tr>
+        <tr>
+        <td>1986–87</td>
+        <td>25</td>
+        <td>6</td>
+        <td>2</td>
+        <td>0</td>
+        <td colspan="2">-</td>
+        <td>7</td>
+        <td>1</td>
+        <td>34</td>
+        <td>7</td>
+        </tr>
+        <tr>
+        <td>1987–88</td>
+        <td>27</td>
+        <td>14</td>
+        <td>4</td>
+        <td>4</td>
+        <td colspan="">2</td>
+        <td>7</td>
+        <td>5</td>
+        <td>38</td>
+        <td>23</td>
+        </tr>
+        <tr>
+        <td>1988–89</td>
+        <td>26</td>
+        <td>23</td>
+        <td>7</td>
+        <td>3</td>
+        <td colspan="2">-</td>
+        <td>8</td>
+        <td>8</td>
+        <td>41</td>
+        <td>34</td>
+        </tr>
+        <tr>
+        <td>1989–90</td>
+        <td>30</td>
+        <td>38</td>
+        <td>5</td>
+        <td>7</td>
+        <td colspan="2"></td>
+        <td>3</td>
+        <td>2</td>
+        <td>38</td>
+        <td>47</td>
+        </tr>
+        <tr>
+        <td class="tcolor" colspan="2">Общо</td>
+        <td class="tcolor">119</td>
+        <td class="tcolor">81</td>
+        <td class="tcolor">23</td>
+        <td class="tcolor">16</td>
+        <td class="tcolor">0</td>
+        <td class="tcolor">0</td>
+        <td class="tcolor">25</td>
+        <td class="tcolor">16</td>
+        <td class="tcolor">167</td>
+        <td class="tcolor">113</td>
+        </tr>
+        <tr>
+        <td rowspan="6">ФК Барселона</td>
+        <td>1990–91</td>
+        <td rowspan="5">Ла Лига</td>
+        <td>24</td>
+        <td>14</td>
+        <td>6</td>
+        <td>2</td>
+        <td colspan="2">-</td>
+        <td>8</td>
+        <td>6</td>
+        <td>38</td>
+        <td>22</td>
+        </tr>
+        <tr>
+        <td>1991–92</td>
+        <td>32</td>
+        <td>17</td>
+        <td>2</td>
+        <td>1</td>
+        <td colspan="">-</td>
+        <td>9</td>
+        <td>4</td>
+        <td>43</td>
+        <td>22</td>
+        </tr>
+        <tr>
+        <td>1992–93</td>
+        <td>34</td>
+        <td>20</td>
+        <td>6</td>
+        <td>1</td>
+        <td colspan="2">-</td>
+        <td>6</td>
+        <td>2</td>
+        <td>46</td>
+        <td>23</td>
+        </tr>
+        <tr>
+        <td>1993–94</td>
+        <td>34</td>
+        <td>16</td>
+        <td>6</td>
+        <td>1</td>
+        <td colspan="2">-</td>
+        <td>8</td>
+        <td>7</td>
+        <td>48</td>
+        <td>24</td>
+        </tr>
+        <tr>
+        <td>1994–95</td>
+        <td>27</td>
+        <td>9</td>
+        <td>4</td>
+        <td>5</td>
+        <td colspan="2">-</td>
+        <td>8</td>
+        <td>3</td>
+        <td>39</td>
+        <td>17</td>
+        </tr>
+        <tr>
+        <td class="tcolor" colspan="2">Общо</td>
+        <td class="tcolor">151</td>
+        <td class="tcolor">76</td>
+        <td class="tcolor">24</td>
+        <td class="tcolor">10</td>
+        <td class="tcolor">0</td>
+        <td class="tcolor">0</td>
+        <td class="tcolor">39</td>
+        <td class="tcolor">22</td>
+        <td class="tcolor">214</td>
+        <td class="tcolor">108</td>
+        </tr>
+        <tr>
+        <td>Парма</td>
+        <td>1995–96</td>
+        <td>Серия А</td>
+        <td>23</td>
+        <td>5</td>
+        <td>2</td>
+        <td>0</td>
+        <td colspan="2">-</td>
+        <td>5</td>
+        <td>2</td>
+        <td>30</td>
+        <td>7</td>
+        </tr>
+        <tr>
+        <td rowspan="3">ФК Барселона</td>
+        <td>1996–97</td>
+        <td rowspan="2">Ла Лига</td>
+        <td>22</td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+        <td colspan="2">-</td>
+        <td>7</td>
+        <td>0</td>
+        <td>35</td>
+        <td>8</td>
+        </tr>
+        <tr>
+        <td>1997–98</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1</td>
+        <td>0</td>
+        <td colspan="2">-</td>
+        <td>3</td>
+        <td>1</td>
+        <td>6</td>
+        <td>1</td>
+        </tr>
+        <tr>
+        <td class="tcolor" colspan="2">Общо</td>
+        <td class="tcolor">24</td>
+        <td class="tcolor">7</td>
+        <td class="tcolor">7</td>
+        <td class="tcolor">1</td>
+        <td class="tcolor">0</td>
+        <td class="tcolor">0</td>
+        <td class="tcolor">10</td>
+        <td class="tcolor">1</td>
+        <td class="tcolor">41</td>
+        <td class="tcolor">9</td>
+        </tr>
+        <tr>
+        <td>ЦСКА</td>
+        <td>1997–98</td>
+        <td>А Група</td>
+        <td>4</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>5</td>
+        <td>3</td>
+        </tr>
+        <tr>
+        <td>Ал Насър</td>
+        <td>1997–98</td>
+        <td>Саудитска Висша Лига</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>1</td>
+        <td>2</td>
+        <td>1</td>
+        </tr>
+        <tr>
+        <td rowspan="3">Кашива Рейсол</td>
+        <td>1998</td>
+        <td rowspan="2">Лига 1 на Япония</td>
+        <td>16</td>
+        <td>8</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td colspan="2">-</td>
+        <td>17</td>
+        <td>8</td>
+        </tr>
+        <tr>
+        <td>1999</td>
+        <td>11</td>
+        <td>4</td>
+        <td>0</td>
+        <td>0</td>
+        <td>1</td>
+        <td>1</td>
+        <td colspan="2">-</td>
+        <td>12</td>
+        <td>5</td>
+        </tr>
+        <tr>
+        <td class="tcolor" colspan="2">Общо</td>
+        <td class="tcolor">27</td>
+        <td class="tcolor">12</td>
+        <td class="tcolor">1</td>
+        <td class="tcolor">0</td>
+        <td class="tcolor">1</td>
+        <td class="tcolor">1</td>
+        <td class="tcolor" colspan="2">-</td>
+        <td class="tcolor">29</td>
+        <td class="tcolor">13</td>
+        </tr>
+        <tr>
+        <td rowspan="4">Чикаго Файър</td>
+        <td>2000</td>
+        <td rowspan="3">МЛС</td>
+        <td>18</td>
+        <td>9</td>
+        <td>3</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>21</td>
+        <td>10</td>
+        </tr>
+        <tr>
+        <td>2001</td>
+        <td>17</td>
+        <td>6</td>
+        <td>3</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>20</td>
+        <td>8</td>
+        </tr>
+        <tr>
+        <td>2002</td>
+        <td>16</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>16</td>
+        <td>2</td>
+        </tr>
+        <tr>
+        <td class="tcolor" colspan="2">Общо</td>
+        <td class="tcolor">51</td>
+        <td class="tcolor">17</td>
+        <td class="tcolor">6</td>
+        <td class="tcolor">3</td>
+        <td class="tcolor"></td>
+        <td class="tcolor"></td>
+        <td class="tcolor"></td>
+        <td class="tcolor"></td>
+        <td class="tcolor">57</td>
+        <td class="tcolor">23</td>
+        </tr>
+        <tr>
+        <td>Ди Си Юнайтед</td>
+        <td>2003</td>
+        <td>МЛС</td>
+        <td>21</td>
+        <td>5</td>
+        <td>3</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>24</td>
+        <td>6</td>
+        </tr>
+        <tr>
+        <td class="tcolor" colspan="3">Общо</td>
+        <td class="tcolor">454</td>
+        <td class="tcolor">220</td>
+        <td class="tcolor">67</td>
+        <td class="tcolor">31</td>
+        <td class="tcolor">1</td>
+        <td class="tcolor">1</td>
+        <td class="tcolor">79</td>
+        <td class="tcolor">41</td>
+        <td class="tcolor">601</td>
+        <td class="tcolor">293</td>
+        </tr>
+    </table>
+
+    <h2 class="h1-postij">Интернационални</h2>
+    <div class="line"></div>
+
+    <table>
+        <tr>
+            <th>Национален отбор</th>
+            <th>Година</th>
+            <th>Мачове</th>
+            <th>Голове</th>
+        </tr>
+        <tr>
+            <td rowspan="13">България</td>
+            <td>1987</td>
+            <td>3</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1988</td>
+            <td>12</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1989</td>
+            <td>8</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1990</td>
+            <td>4</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>1991</td>
+            <td>3</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1992</td>
+            <td>5</td>
+            <td>2</td>
+        </tr>
+        <tr>
+           <td>1993</td> 
+           <td>6</td> 
+           <td>4</td> 
+        </tr>
+        <tr>
+            <td>1994</td>
+            <td>11</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>1995</td>
+            <td>7</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>1996</td>
+            <td>5</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>1997</td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1998</td>
+            <td>10</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1999</td>
+            <td>5</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="tcolor">Общо</td>
+            <td class="tcolor">83</td>
+            <td class="tcolor">37</td>
+        </tr>
+    </table>
+
+    
+    <button id="scrollToTopBtn" onclick="scrollToTop()"><span id="scrollbtn" class="material-symbols-outlined cp">
+        arrow_upward
+        </span></button>
+    
+<footer>    
+        
+        
+        
+    <div class="ftrmaindiv">
+        <div class="divpftr">
+            <p style="color: gray;">
+                © 2024 Hristo Stoichkov
+            </p>
+        </div>
+        <div class="divaftr">
+            <a class="aftr" href="kariera.html" title="Състезателната кариера на Христо Стоичков">Състезателна кариера</a>
+            <a class="aftr" href="trenkariera.html" title="Стоичков като треньор">Треньорска кариера</a>
+            <a class="aftr" href="postijeniq.html" title="Христо Стоичков">Постижения</a>
+            <a class="aftr" href="statistiki.html" title="Голове и мачове на Христо Стоичков">Статистики</a>
+            <a class="aftr" href="contact.html" title="Контакт">Контакти</a>
+        </div>
+    </div>
+    
+    <div class="line lnfts"></div>
+
+    <div class="ftrlgalg">
+        <a href="index.html">
+            <img class="logoftr" src="images/logo.png" alt="hr8logo">
+        </a>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+</footer>
+
+</body>
+</html>

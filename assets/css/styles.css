@@ -1,0 +1,1547 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    margin: 0px;
+    background: white;
+}
+
+header {
+    border-bottom: 3px solid gold;
+    height: 80px;
+    display: flex;
+    background: black;
+}
+
+:root {
+    --lightgrey: rgb(244, 244, 244);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #303030;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #373737;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #212121;
+  }
+
+.a-h1 {
+    color: gold;
+    background: rgb(233,204,45);
+    background: linear-gradient(90deg, rgba(233,204,45,1) 0%, rgba(255,215,0,1) 34%, rgba(255,175,0,1) 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-div {
+    display: flex;
+    width: 100%;
+}
+
+.nav-header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.nav-header-logo {
+    margin-left: 35px;
+}
+
+.nav-header-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.header-btns {
+    position: absolute;
+    right: 10px;
+}
+
+.logo {
+    width: 80px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0px auto;
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-size: 2.7rem;
+    margin-top: 5px;
+    margin-right: 15px;
+    background: linear-gradient(90deg, rgba(233,204,45,1) 0%, rgba(255,215,0,1) 34%, rgba(255,175,0,1) 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#menu {
+    background: rgb(233,204,45);
+    background: linear-gradient(90deg, rgba(233,204,45,1) 0%, rgba(255,215,0,1) 34%, rgba(255,175,0,1) 68%);
+    display: grid;
+    box-shadow: 0px 15px 10px -15px #111;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#nav-menu {
+    display: grid;
+    align-items: center;
+}
+
+.nav-ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.hamburger-menu {
+    background: none;
+    border: none;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    padding: 0px;
+}
+
+.hamburger-menu span {
+    margin: 0px;
+}
+
+#btn-close {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    border-top: 1px solid gold;
+    background: black;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.divaftr {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.aftr {
+    color: gray;
+}
+
+.divpftr {
+    position: absolute;
+    left: 100px;
+}
+
+.lnfts {
+    border: 1px solid gray !important;
+    width: 90% !important;
+    margin-top: 20px !important;
+}
+
+.logoftr {
+    height: 50px;
+    filter: grayscale(100%);
+}
+
+.ftrlgalg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ftrmaindiv {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fttrkariera {
+    margin-top: 80px;
+}
+
+.mpsas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.kontkdiv {
+    display: flex;
+}
+
+.dsadq {
+    font-size: 0.9rem !important;
+}
+
+.mptxt {
+    width: 600px;
+    text-align: center;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    display: grid;
+    align-items: center;
+    min-height: 650px;
+}
+
+* {box-sizing:border-box}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: lightgray;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.imgSlides {
+    width: 400px;
+    height: 650px;
+    object-fit: cover;
+}
+
+.slide-content {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the previous and next buttons */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.stcontent {
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.year {
+    font-size: 5rem;
+    color: gold;
+    width: 60vw;
+    margin-top: -50px;
+    margin-left: -150px;
+    cursor: default;
+}
+
+.year1::after {
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: gold;
+    display: flex;
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+.story {
+    margin-left: 100px;
+}
+
+.box1 {
+    width: 550px;
+    height: 200px;
+    background: var(--lightgrey);
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.box2 {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.box-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.palign {
+    margin-left: 15px;
+    margin-top: 70px;
+    cursor: default;
+}
+
+.pyear {
+    color: gold;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.pclub {
+    margin: 0px;
+    font-size: 1.7rem;
+}
+
+.box-text {
+    width: 500px;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    cursor: default;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: white;
+    border: 1px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#scrollToTopBtn:hover {
+    border: 1px solid darkgray;
+    background: white;
+}
+
+#scrollbtn {
+    margin: 0px;
+    font-size: 2rem;
+    color: white;
+}
+
+.h1-postij {
+    background: linear-gradient(90deg, rgba(233,204,45,1) 0%, rgba(255,215,0,1) 34%, rgba(255,175,0,1) 68%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    font-size: 2.5rem;
+}
+
+.line {
+    border: 1px solid gold;
+    width: 40%;
+    margin: 0px auto;
+}
+
+.line1 {
+    border: 1px solid gold;
+    width: 30%;
+    margin: 0px auto;
+}
+
+.m {
+    margin-top: 30px;
+}
+
+.clubs {
+    margin-top: 50px;
+}
+
+.clubsalign {
+    display: grid;
+    justify-content: center;
+}
+
+.ul-clubs {
+    gap: 5px;
+    margin: 0px auto;
+    cursor: default;
+}
+
+.club {
+    display: grid;
+    width: 300px;
+    transition: all 1s ease-in-out;
+}
+
+.clubs-name {
+    text-align: center;
+    margin: 0px;
+}
+
+.club:hover {
+    transform: scale(1.05);
+    
+}
+
+.club-logo {
+    height: 150px;
+    margin: 0px auto;
+}
+
+.line2 {
+    margin-bottom: 10px;
+    max-height: 1px;
+}
+
+.row-1 {
+    display: flex;
+}
+
+.row-2 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.ntvsbl {
+    visibility: hidden;
+}
+
+.awards {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.awards1 {
+    width: 100%;
+    background: var(--lightgrey);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.awrds-img {
+    height: 500px;
+}
+
+.awrdsimg1 {
+    z-index: 999;
+    margin-right: 250px;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+.awrdsimg2 {
+    position: absolute;
+    bottom: 0px;
+    height: 300px;
+    right: 0px;
+    filter: brightness(0.6);
+}
+
+.awards-div-algn {
+    margin-left: 40px;
+    z-index: 999;
+}
+
+.awards-ul {
+    gap: 10px;
+    display: grid;
+    font-size: 1.2rem;
+    cursor: default;
+}
+
+.awards-img-algn {
+    position: relative;
+    display: flex;
+    bottom: 0px;
+    display: contents;
+}
+
+table {
+    border: 3px solid darkgray;
+    border-collapse: collapse;
+    text-align: center;
+    background: var(--lightgrey);
+    padding: 5px;
+    margin: 0px auto;
+    margin-top: 30px;
+    user-select: none;
+}
+
+th {
+    background: #e0e0e0;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+.tcolor {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+.contact-div {
+    border: 3px solid gold;
+    width: 450px;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: default;
+    height: fit-content;
+}
+
+.contact-form {
+    display: grid;
+    justify-content: center;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.pformc {
+    margin: 0px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.pformg {
+    font-size: 1.5rem;
+    margin-top: 0px;
+}
+
+.contactinput {
+    width: 400px;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.cibtn {
+    width: 110px !important;
+    margin: 0px auto;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: black;
+    color: gold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.telcont {
+    color: gold;
+    background-color: black;
+    padding: 20px 50px 20px 50px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    margin: 0px auto;
+    cursor: pointer;
+    display: flex;
+    width: fit-content;
+}
+
+.contacts-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.trentxt {
+    width: 66%;
+    text-align: justify;
+    margin: 0px auto;
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.box-placement {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid gold;
+    width: fit-content;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.box-align {
+    gap: 10px;
+    display: grid;
+}
+
+.box-row {
+    display: flex;
+    gap: 10px;
+}
+
+.box-img-algn {
+    width: min-content;
+    padding: 5px;
+}
+
+.kolona {
+    display: flex;
+    gap: 30px;
+}
+
+.div-box {
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+}
+
+.chislo-p {
+    font-size: 2rem;
+}
+
+.text-p {
+    font-size: 1.4rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background: var(--lightgrey);
+    width: 125px;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img-p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.box-p {
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+@media only screen and (max-width: 1350px) {
+    .awards-ul {
+        font-size: 1.1rem;
+        margin-left: -10px;
+    }
+
+    .awrds-img {
+        height: 480px;
+    }
+
+    .awrdsimg2 {
+        height: 280px;
+    }
+
+    .awards-div-algn {
+        margin-left: 50px;
+    }
+
+    .year1::after {
+        width: 70%;
+    }
+
+    .story {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .awrds-img {
+        height: 450px;
+        right: -60px;
+    }
+
+    .awrdsimg2 {
+        height: 250px;
+        right: -30px;
+    }
+
+    .awards-div-algn {
+        margin-left: 0px;
+    }
+
+    .club-logo {
+        height: 130px;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .clubsalign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+      }
+    
+      .row-1,
+      .row-2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    
+      .club {
+        margin: 10px;
+        flex: 1 1 45%; /* Adjust the width as needed */
+        max-width: 300px; /* Adjust the maximum width of the clubs as needed */
+      }
+
+      .clubs {
+        margin-top: 20px;
+      }
+}
+
+@media only screen and (max-width: 1050px) {
+    .mpsas {
+        display: grid;
+    }
+
+    .mptxt {
+        border: none;
+    }
+
+    .slideshow-container {
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-ul {
+        gap: 60px;
+    }
+
+    .nav-header-h1 {
+        gap: 10px;
+    }
+
+    .awrds-img {
+        height: 430px;
+    }
+
+    .awrdsimg1 {
+        right: -80px;
+    }
+
+    .awrdsimg2 {
+        height: 230px;
+    }
+
+    .box {
+        height: 115px;
+        width: 115px;
+    }
+
+    .box-placement {
+        padding: 10px 15px;
+    }
+
+    th {
+        padding: 1px;
+    }
+
+    td {
+        padding: 1px;
+    }
+
+    table {
+        font-size: 0.99rem;
+        overflow-x: scroll;
+    }
+
+    .year1::after {
+        width: 90%;
+        margin-top: -40px;
+        margin-left: 150px;
+    }
+
+    .year {
+        font-size: 4rem;
+        margin-left: -100px;
+    }
+
+    .divpftr {
+        left: 55px;
+    }
+
+    .trentxt {
+        text-align: unset;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .contacts-div {
+        display: grid;
+        margin-top: 10px;
+    }
+
+    .nav-ul {
+        gap: 40px;
+    }
+
+    .nav-header-h1 {
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    .awrds-img {
+        height: 400px;
+    }
+
+    .awrdsimg1 {
+        right: -110px;
+    }
+
+    .awrdsimg2 {
+        height: 200px;
+    }
+
+    .box {
+        height: 105px;
+        width: 105px;
+    }
+
+    .chislo-p {
+        font-size: 1.9rem;
+    }
+
+    .text-p {
+        font-size: 1.3rem;
+    }
+    
+    table {
+        font-size: 0.89rem;
+    }
+
+    .year1::after {
+        width: 100%;
+    }
+
+    .year {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .divpftr {
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .box {
+        height: 95px;
+        width: 95px;
+    }
+
+    .chislo-p {
+        font-size: 1.8rem;
+    }
+
+    .text-p {
+        font-size: 1.2rem;
+    } 
+
+    .box-img-p {
+        font-size: 1.2rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .box {
+        height: 85px;
+        width: 85px;
+    }
+
+    .text-p {
+        font-size: 1.1rem;
+    } 
+
+    table {
+        font-size: 0.75rem;
+    }
+
+    .year {
+        margin-left: -50px;
+    }
+
+    .divpftr {
+        text-align: center;
+        position: unset;
+    }
+
+    .ftrmaindiv {
+        display: grid;
+        padding: 0px;
+    }
+
+    .divaftr {
+        position: unset;
+        margin: 0px auto;
+        width: fit-content;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-ul {
+        gap: 20px;
+    }
+
+    .nav-header-h1 {
+        gap: 0px;
+    }
+
+    .header-btns {
+        right: 1px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .h1-postij {
+        margin-top: 30px;
+    }
+
+    .awards {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .box {
+        height: 75px;
+        width: 75px;
+    }
+
+    .chislo-p {
+        font-size: 1.8rem;
+    }
+
+    .text-p {
+        font-size: 1rem;
+    } 
+
+    .box-img-p {
+        font-size: 1.2rem;
+    }
+
+    .kolona {
+        gap: 15px;
+    }
+
+    .div-box {
+        gap: 15px;
+    }
+
+    table {
+        max-width: 500px;
+        overflow-x: scroll;
+    }
+
+    .year1::after {
+        width: 100%;
+    }
+
+    .year {
+        margin-left: -20px;
+    }
+
+    .palign {
+        margin-top: 50px;
+    }
+
+    .trentxt {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .kolona {
+        display: grid;
+    }
+
+    .box-placement {
+        padding: 5px 10px;
+    }
+
+    .div-box {
+        margin: 15px 0 15px 0;
+    }
+    
+    .box-img {
+        height: 170px;
+    }
+
+    .pyear {
+        font-size: 1.7rem;
+    }
+
+    .pclub {
+        font-size: 1.4rem;
+    }
+
+    .box1 {
+        width: 455px;
+        height: 170px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 650px) {
+    .nav-ul {
+        display: grid;
+        gap: 5px;
+    }
+    
+    .nav-ul li {
+        border-bottom: 1px solid black;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .header-btns {
+        right: 1px;
+    }
+    
+    .header-btns {
+        right: 0px;
+    }
+
+    h1 {
+        font-size: 2.7rem;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .h1-postij {
+        font-size: 2.3rem;
+    }
+
+    .year {
+        font-size: 3rem;
+        margin-left: 20px;
+    }
+
+    .year1::after {
+        margin-top: -26px;
+        margin-left: 110px;
+    }
+
+    .box-text p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    .logo {
+        width: 60px;
+    }
+    
+    .material-symbols-outlined {
+        font-size: 2.6rem;
+    }
+
+    .h1-postij {
+        margin-top: 20px;
+    }
+
+    .mptxt {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 2.5rem;
+    }
+
+    .nav-header {
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+   
+    .h1-postij {
+        font-size: 2.2rem;
+    }
+
+    .awards-ul {
+        font-size: 1rem;
+    }
+
+    .awrds-img {
+        height: 380px;
+    }
+
+    .awrdsimg1 {
+        right: -130px;
+        opacity: 0.8;
+    }
+
+    .awrdsimg2 {
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .nav-header {
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .nav-header {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .nav-header {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .nav-header {
+        margin-left: 10px;
+    }
+
+    .h1-postij {
+        margin-top: 10px;
+        font-size: 2.1rem;
+    }
+
+    .awards {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-header {
+        margin-left: 5px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 2.4rem;
+    }
+
+    .box-img {
+        height: 150px;
+    }
+
+    .pyear {
+        font-size: 1.5rem;
+    }
+
+    .pclub {
+        font-size: 1.2rem;
+    }
+
+    .box1 {
+        width: 375px;
+        height: 155px;
+    }
+
+    .box-text {
+        width: auto;
+        height: auto;
+    }
+
+    .box-text p {
+        font-size: 0.8rem;
+    }
+
+    .divaftr {
+        display: grid;
+    }
+
+    .imgSlides {
+        height: 550px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 2.3rem;
+    }
+
+    .h1-postij {
+        font-size: 2rem;
+    }
+
+    .contact-div {
+        width: 440px;
+    }
+
+    .contactinput {
+        width: 390px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 2.2rem;
+    }
+
+    .h1-postij {
+        font-size: 1.9rem;
+    }
+
+    .contact-div {
+        width: 420px;
+    }
+
+    .contactinput {
+        width: 380px;
+    }
+
+    .awrds-img {
+        height: 350px;
+    }
+
+    .awrdsimg1 {
+        right: -170px;
+    }
+
+    .awrdsimg2 {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .chislo-p {
+        font-size: 1.7rem;
+    }
+
+    .text-p {
+        font-size: 0.9rem;
+    }
+
+    .box-imgtren {
+        width: 100px;
+    }
+
+    .box-img-p {
+        font-size: 1rem;
+    }
+
+    .imgSlides {
+        height: 450px;
+        width: 350px;
+    }
+
+    .mptxt {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 2.1rem;
+    }
+
+    .contact-div {
+        width: 400px;
+    }
+
+    .contactinput {
+        width: 370px;
+    }
+
+    .h1-postij {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 2rem;
+    }
+
+    .contact-div {
+        width: 380px;
+    }
+
+    .contactinput {
+        width: 360px;
+    }
+
+    .h1-postij {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.9rem;
+    }
+
+    .contactinput {
+        width: 350px;
+    }
+
+    .h1-postij {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.8rem;
+    }
+
+    .contact-div {
+        width: 360px;
+    }
+
+    .contactinput {
+        width: 340px;
+    }
+
+    .h1-postij {
+        font-size: 1.6rem;
+    }
+
+    .box-img {
+        height: 130px;
+    }
+
+    .pyear {
+        font-size: 1.4rem;
+    }
+
+    .pclub {
+        font-size: 1.1rem;
+    }
+
+    .box1 {
+        width: 340px;
+        height: 135px;
+    }
+
+    .palign {
+        margin-top: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.7rem;
+    }
+
+    .contact-div {
+        width: 340px;
+    }
+
+    .contactinput {
+        width: 320px;
+    }
+
+    .telcont {
+        font-size: 1.9rem;
+    }
+
+    .h1-postij {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .imgSlides {
+        height: 400px;
+        width: 275px;
+    }
+
+    .year1::after {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .h1-postij {
+        font-size: 1.4rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.6rem;
+    }
+
+    .contact-div {
+        width: 320px;
+    }
+
+    .contactinput {
+        width: 300px;
+    }
+
+    .telcont {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .box-img {
+        height: 110px;
+    }
+
+    .pyear {
+        font-size: 1.3rem;
+    }
+
+    .pclub {
+        font-size: 1rem;
+    }
+
+    .box1 {
+        width: 300px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .material-symbols-outlined {
+        font-size: 1.5rem;
+    }
+
+    .contact-div {
+        width: 300px;
+    }
+
+    .contactinput {
+        width: 280px;
+    }
+
+    .telcont {
+        font-size: 1.7rem;
+    }
+}
